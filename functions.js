@@ -56,6 +56,7 @@ const total =addition(1965, 1612775)
 console.log(total)
 
 // 3 -------Arrow Function
+/*
 
 const calcAge2 = birthYear => 2021 -birthYear
 console.log(calcAge(2000))
@@ -81,7 +82,7 @@ function exponentValue(value){
 }
 const hipoResult = hipotenus (7, 24)
 console.log(hipoResult)
-
+*/
 /* 
 
 //--------- ortalama alma fonksiyonu yaziniz
@@ -163,7 +164,7 @@ An n-digit number that is the sum of the nth powers of its digits is called an n
 P.S:  consider the negative, decimal and any entries other than numeric values then display a warning message to the user.
 */
 
-
+/*
 const number = prompt("Enter a three digit number: ")
 
         function isArmstrong(number){
@@ -179,4 +180,37 @@ const number = prompt("Enter a three digit number: ")
         }
         console.log(isArmstrong(number))
 
+*/
+  // ---------STRIG METHODS-------------------------//              
 
+  let text = "Her şey güzel olacak !"
+  let len = text.length
+  console.log("lenght" + len)
+
+
+
+   // ---------EXTRACT METHODS-------------------------// 
+   // SLICE(START, END)
+
+   let firstPart = text.slice(8, 13)
+   console.log(firstPart)
+   console.log("text: " + text)
+
+   let secondPart = text.slice(8)
+   console.log(secondPart)
+
+   let thirdPart = text.slice(-14, -9)
+   console.log(thirdPart)
+
+    // ---------SUBSTRING(start,  end) METHODS-------------------------// 
+
+    let part = text.substring(8,13)
+    console.log(part)
+
+    // substr (start,length)
+
+    let substrPart =text.substr(8,5)
+    console.log(substrPart)
+
+    let substrPart2 =text.substr(-14,5)
+    console.log(substrPart2)
