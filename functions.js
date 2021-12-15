@@ -214,3 +214,51 @@ const number = prompt("Enter a three digit number: ")
 
     let substrPart2 =text.substr(-14,5)
     console.log(substrPart2)
+
+
+
+    // --------------SPLIT-------------------- gelen veriden bir bolumu almak icin kullanilabilr
+
+    let text2 = "Turkey, Germany, USA, France"
+    let splittedPart = text.split("  ")
+    console.log(splittedPart)
+
+    let splittedPart2 =text2.split(",")
+    console.log(splittedPart2)
+
+    let splittedPart3 = text.split("")
+    console.log(splittedPart3)
+
+   // --------------REPLACE--------------------yerine koyma virgul varsa noktayla degistir
+
+   let string = "Current euro currency is 15,22"
+   let splitIT = string.split(" ")
+   console.log(splitIT)
+   let currency = splitIT[splitIT.length-1]
+   currency = currency.replace(",", "." )
+      console.log(currency)
+      currency = Number(currency)
+      console.log(currency)
+
+
+    //console.log(splittedPart2[1])
+
+
+       // --------------TRIMMED--------------------
+        let string3 = "     Welcome to DGHome      "
+        console.log(string3)
+        let trimmed = string3.trim()
+        console.log(trimmed)
+
+        // let
+
+
+
+       // --------------INCLUDES-------------------- // UCUNDE VAR MI VARSA TRUE YOKSA FALSE
+
+       console.log(trimmed.includes("Welcome"))
+
+          // --------------INDEXOF--------------------
+
+          let strıng4 = "All is well !"
+          let ind = string.indexOf("l")
